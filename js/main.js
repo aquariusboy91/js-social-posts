@@ -269,15 +269,27 @@ const feed = [
      likes.append(like_counter);
 
      //creo l'elemento b
-     let counter = document.getElementById('like-counter-1');
+     let counter = 0;
 
      //aggiungo elemento b al div counter
      like_counter.append(counter);
 
+    console.log(counter);
 
-     like_counter.innerHTML = `Piace a 80 persone`;
+     like_counter.innerHTML = `Piace a ${counter} persone`;
+
+     console.log(likes_cta);
+
+     likes_cta.addEventListener("click", function(){
+        counter += 1;
+      });
 
   }
+
+  //bonus 
+//   3. Al click su un pulsante “Mi Piace” di un post,
+//    incrementare il contatore di like al post e cambiare 
+//    colore al testo del bottone.
 
 
 
