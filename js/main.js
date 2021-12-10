@@ -196,6 +196,105 @@ const feed = [
      //aggiungo l'immagine al post image
      post_image.append(img_post);
 
+     //INIZIO FEED FOOTER
+     
+     //creo il div post footer 
+     let post_footer= document.createElement("div");
+
+     //aggiungo la classe post footer al div post footer
+     post_footer.classList.add("post__footer");
+
+     //aggiungo il div post footer al feed
+     feed_card.append(post_footer);
+
+     //creo il div likes 
+     let likes= document.createElement("div");
+
+     //aggiungo la classe likes al div likes 
+     likes.classList.add("likes");
+     likes.classList.add("js-likes");
+
+     //aggiungo il div likes al footer
+     post_footer.append(likes);
+
+     //creo il div likes cta 
+     let likes_cta= document.createElement("div");
+
+     //aggiungo la classe likes cta al div likes cta
+     likes_cta.classList.add("likes__cta");
+
+     //aggiungo il div likes al footer
+     likes.append(likes_cta);
+
+     //creo il bottone like
+     let likes_btn= document.createElement("a");
+
+     //aggiungo la classe like button js like button al btn like
+     likes_btn.classList.add("like-button");
+     likes_btn.classList.add("js-like-button");
+
+     //aggiungo il bottone al div like cta 
+     likes_cta.append(likes_btn);
+
+     //creo l'elemento icona 
+     let like_icon= document.createElement("i");
+
+     //aggiungo le classi dell'icona all'icona
+     like_icon.classList.add("like-button__icon");
+     like_icon.classList.add("fas");
+     like_icon.classList.add("fa-thumbs-up");
+
+     //aggiungo l'icona all'interno del link
+     likes_btn.append(like_icon);
+
+     //creo lo span mi piace 
+     let like_span= document.createElement("span");
+
+     //aggiungo la classe like button label al like span
+     like_span.classList.add("like-button__label");
+
+     //scrivo dentro lo span 
+     like_span.innerHTML = " Mi piace";
+
+     //aggiungo lo span al bottone
+     likes_btn.append(like_span);
+
+     //creo il div likes counter 
+     let like_counter= document.createElement("div");
+
+     //aggiungo la classe likes counter al counter 
+     like_counter.classList.add("likes__counter");
+
+     //aggiungo like counter al footer
+     likes.append(like_counter);
+
+     //creo l'elemento b
+     let counter = document.getElementById('like-counter-1');
+
+     //aggiungo elemento b al div counter
+     like_counter.append(counter);
+
+
+     like_counter.innerHTML = `Piace a 80 persone`;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -211,4 +310,4 @@ const feed = [
 
      
 
-  }
+  
