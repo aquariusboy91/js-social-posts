@@ -276,12 +276,14 @@ const feed = [
 
     console.log(counter);
 
-     like_counter.innerHTML = `Piace a ${counter} persone`;
+
+    like_counter.innerHTML = `Piace a 0 persone `;
 
      console.log(likes_cta);
 
      likes_cta.addEventListener("click", function(){
         counter += 1;
+        like_counter.innerHTML=`Piace a ${counter} persone`;
       });
 
   }
